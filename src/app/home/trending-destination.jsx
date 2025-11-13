@@ -12,9 +12,9 @@ const TrendingDestination = () => {
           {TRENDING_DESTINATIONS.map((destination,index)=>(
             <div key={index} className={`h-[270px] rounded-lg overflow-hidden relative ${destination.className}`} >
               <img className='object-cover size-full rounded-lg' src={getAsserPath(destination.image)} alt={destination.title} />
-              <div>
-                <div>
-                  <h3>{destination.title}</h3>
+              <div className='absolute from-70% inset-0 to-100% size-full bg-gradient-to-t from-transparent  to-blue-800/60'>
+                <div className='p-3'>
+                  <h3 className='text-xl font-bold text-white'>{destination.title}</h3>
                 </div>
               </div>
             </div>
